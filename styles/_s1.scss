@@ -1,0 +1,72 @@
+.first-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+}
+
+.typewriter {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hi {
+    font-size: 3rem;
+    animation: typewriter-hi 700ms steps(10) 1s 1 normal both,
+        blinkTextCursor 500ms steps(40) 5 alternate;
+}
+
+.name {
+    font-size: 3rem;
+    animation: typewriter-name 2s steps(20) 3s 1 normal both,
+        blinkTextCursor 500ms steps(40) 3s 5 alternate;
+}
+
+.description {
+    font-size: 1.5rem;
+    animation: typewriter-description 2s steps(20) 6s 1 normal both,
+        blinkTextCursor 500ms steps(40) 6s 7 alternate;
+}
+
+
+@keyframes typewriter-hi {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 1.5em;
+    }
+}
+
+@keyframes typewriter-name {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 4.2em;
+    }
+}
+
+@keyframes typewriter-description {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right: 2px solid;
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right: 0px solid;
+        border-right-color: transparent;
+    }
+}

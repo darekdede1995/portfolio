@@ -1,0 +1,57 @@
+.path__container {
+    position: absolute;
+    height: 60vh;
+    top: 20vh;
+    width: 160vw;
+    left: 380vw;
+    opacity: 1;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+.path {
+    position: absolute;
+    height: 40vh;
+    opacity: 0;
+}
+
+.story {
+    opacity: 0;
+    margin-bottom: 6vh;
+    font-size: 12vh;
+}
+
+.skills {
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes slide-in-bck-center {
+    0% {
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes path-appear {
+    from {
+        opacity: 1;
+        width: 0;
+        left: 380vw;
+    }
+
+    to {
+        opacity: 1;
+        width: 160vw;
+        left: 380vw;
+    }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Caladea&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700&display=swap');
+
+@import "normalize";
+@import "bacons";
+@import "frame";
+@import "main";
+@import "shapes";
+@import "skills-list";
+@import "s1";
+@import "s2";
+@import "s3";
+@import "s4";
+@import "s5";
+@import "s6";
+
+.mobile-info {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 3em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    div {
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 1271px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .slide {
+        height: 80vh;
+        padding-bottom: 20%;
+    }
+
+    .shell {
+        top: 60vh;
+    }
+}

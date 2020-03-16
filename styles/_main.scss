@@ -1,0 +1,75 @@
+body {
+    font-family: 'Caladea', serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    animation: disable-scroll 10s;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 640vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    width: 640vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #07011d 0%, #4c1ef1 100%);
+}
+
+@keyframes disable-scroll {
+
+    0%,
+    99% {
+        overflow-y: hidden;
+    }
+
+    100% {
+        overflow-y: scroll;
+    }
+}
+
+@keyframes disable-scroll-2 {
+
+    0%,
+    99% {
+        overflow-y: hidden;
+    }
+
+    100% {
+        overflow-y: scroll;
+    }
+}
+
+@keyframes disable-scroll-3 {
+
+    0% {
+        overflow-y: hidden;
+    }
+
+    100% {
+        overflow-y: hidden;
+    }
+}

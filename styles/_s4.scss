@@ -1,0 +1,45 @@
+.simplicity1 {
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    font-size: 18vh;
+    margin-bottom: 9vh;
+}
+
+.simplicity2 {
+    color: white;
+    font-size: 6vh;
+    margin-bottom: 3vh;
+    opacity: 0;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    50% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    40% {
+        opacity: 1;
+        background: white;
+    }
+
+    41%,
+    100% {
+        opacity: 1;
+        background: black;
+    }
+}

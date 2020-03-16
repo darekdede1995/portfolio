@@ -1,0 +1,79 @@
+.foreground {
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.frame {
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    font-size: 1.8vw;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    opacity: 0;
+}
+
+.frame-main {
+    background-color: rgb(192, 192, 192);
+}
+
+.frame-child {
+    border: dashed 2px white;
+}
+
+.frame-child:nth-child(1) {
+    animation: orbit 18s linear 0s infinite alternate;
+}
+
+.frame-child:nth-child(2) {
+    animation: orbit 11s linear 0s infinite alternate;
+}
+
+.frame-child:nth-child(3) {
+    animation: orbit 7s linear 0s infinite alternate;
+}
+
+.text {
+    pointer-events: none;
+    margin-bottom: 30%;
+    font-size: 3em;
+    opacity: 0;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
